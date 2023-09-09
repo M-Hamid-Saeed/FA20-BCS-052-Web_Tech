@@ -1,0 +1,21 @@
+#main-container {
+  background-color: aqua;
+  width: 800px;
+  height: 100vh;
+  margin: auto;
+}
+#main-left-container {
+  background-color: #f2fedc;
+  width: 250px;
+  height: 50vh;
+}
+#main-leftInner-container {
+  background-color: #3c4240;
+  width: 250px;
+  height: 100vh;
+}
+img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
