@@ -24,7 +24,7 @@ img {
   top: 3%;
   align-items: center;
 }
-h2 {
+#name {
   position: relative;
   top: 2.8%;
   color: #3c4240;
@@ -33,4 +33,25 @@ h2 {
   font-family: "garet", sans-serif;
   text-align: center;
   overflow: hidden;
+}
+.profileText {
+  position: relative;
+  left: 10%;
+  top: 2.8%;
+  color: #efe6e6;
+  font-family: "garet", sans-serif;
+  overflow: visible;
+
+  text-align: left;
+}
+.profileText ul li {
+  position: relative;
+  list-style: none;
+  margin-top: 15px;
+}
+.profileText ul li .text {
+  color: #a6a6a6;
+  font-weight: 100;
+  font-size: medium;
+  position: relative;
 }
