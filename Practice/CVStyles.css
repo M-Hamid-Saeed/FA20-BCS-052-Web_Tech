@@ -6,8 +6,9 @@
 }
 #main-left-container {
   background-color: #efe6e6;
-  width: 40%;
+  width: 37%;
   height: 100vh;
+  margin-top: -3%;
 }
 #main-leftInner-container {
   background-color: #3c4240;
@@ -24,11 +25,12 @@ img {
   top: 3%;
   align-items: center;
 }
-#name {
+.name {
   position: relative;
-  top: 2.8%;
+  top: 2.9%;
   color: #3c4240;
-  font-size: medium;
+  font-size: larger;
+  letter-spacing: 0.5px;
   font-weight: 200%;
   font-family: "garet", sans-serif;
   text-align: center;
@@ -46,12 +48,19 @@ img {
 }
 .profileText ul li {
   position: relative;
-  list-style: none;
-  margin-top: 15px;
+
+  margin-top: 25px;
 }
-.profileText ul li .text {
+.text {
   color: #a6a6a6;
   font-weight: 100;
   font-size: medium;
   position: relative;
+}
+
+.EducationText {
+  font-size: large;
+}
+.PersonalInfo {
+  margin: 0% 0% 10%;
 }
