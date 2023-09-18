@@ -15,8 +15,11 @@ body {
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
-  border: 5px solid aquamarine;
+  border: 5px solid skyblue;
   box-shadow:white;
+}
+.icon{
+  color: #efe6e6;
 }
 #main-right-container {
   height: 100%;
@@ -47,12 +50,13 @@ body {
 }
 img {
   border-radius: 50%;
-;
   width: 60%;
   position: relative;
   left: 20%;
-  padding-top: 20px;
+  margin-top: 20px;
+  /* padding-top: 20px; */
   align-items: center;
+  border: 3px solid skyblue ;
   
 }
 .name {
@@ -107,8 +111,9 @@ img {
   border-bottom-style: solid;
 }
 p{
-  line-height: 1.5;
+  line-height: 1.7;
   padding-bottom: 30px;
+  padding-left: 20px;
 }
 /* .hr {
   width: 100%;
