@@ -9,18 +9,19 @@ body {
 }
 #main-container {
   background-color:white;
-  width: 70vw;
+  width: 65vw;
   height: 100%;
 
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
-  border: 5px solid black;
+  border: 5px solid aquamarine;
+  box-shadow:white;
 }
 #main-right-container {
   height: 100%;
   width: 70%;
-  border: 5px solid black;
+  
   display: flex;
   flex-direction: column;
   padding-left: 15px;
@@ -28,11 +29,15 @@ body {
   text-align: justify;
   
 }
+.rightContainer ul li{
+  list-style: none;
+  padding-left: 30px;
+}
 
 #main-left-container {
   background-color: #efe6e6;
   height: 100%;
-  width: 30%;
+  width: 27vw;
 }
 #main-leftInner-container {
   background-color: #3c4240;
@@ -42,11 +47,13 @@ body {
 }
 img {
   border-radius: 50%;
+;
   width: 60%;
   position: relative;
   left: 20%;
   padding-top: 20px;
   align-items: center;
+  
 }
 .name {
   position: relative;
@@ -101,6 +108,7 @@ img {
 }
 p{
   line-height: 1.5;
+  padding-bottom: 30px;
 }
 /* .hr {
   width: 100%;
