@@ -3,31 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
-#main-container {
-  background-color: aqua;
-  width: 100vh;
-
-  margin: auto;
+body {
+  width: 100vw;
+  background-color: darkgray;
 }
+#main-container {
+  background-color:white;
+  width: 70vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  border: 5px solid black;
+}
+#main-right-container {
+  height: 100%;
+  width: 70%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  
+}
+
 #main-left-container {
   background-color: #efe6e6;
-  width: 37%;
   height: 100%;
-  margin-top: -3%;
+  width: 30%;
 }
 #main-leftInner-container {
   background-color: #3c4240;
-  position: relative;
-  top: 2.4%;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 img {
   border-radius: 50%;
   width: 60%;
   position: relative;
   left: 20%;
-  top: 3%;
+  padding-top: 20px;
   align-items: center;
 }
 .name {
@@ -40,10 +58,12 @@ img {
   font-family: "garet", sans-serif;
   text-align: center;
   overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .profileText {
   position: relative;
-  left: 10%;
+  /* left: 10%; */
   top: 2.8%;
   color: #efe6e6;
   font-family: "garet", sans-serif;
@@ -51,15 +71,20 @@ img {
 
   text-align: left;
 }
+.profileText ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .profileText ul li {
   position: relative;
-
   margin-top: 25px;
+  list-style: none;
 }
 .text {
   color: #a6a6a6;
-  font-weight: 100;
-  font-size: medium;
+  font-weight: 200;
+  font-size: large;
   position: relative;
 }
 
@@ -69,3 +94,19 @@ img {
 .PersonalInfo {
   margin: 0% 0% 10%;
 }
+.infoText {
+  padding-bottom: 5px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+p{
+  line-height: 1.5;
+}
+/* .hr {
+  width: 100%;
+  background: red;
+}
+.hr hr {
+  width: 100%;
+  margin-right: 30px;
+} */
