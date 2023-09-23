@@ -43,8 +43,8 @@
 }
 
 .item-text:hover{
- font-size: 18px;
- color: aquamarine;
+ /* font-size: 22px; */
+ color: red;
 }
 
 
@@ -68,6 +68,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    
 }
 
 .tagline{
@@ -75,8 +77,27 @@
     color: white;
     font-weight: bold;
     font-size: 30px;
+    
 }
-
+.tagline:hover{
+    font-size: 32px;
+    color: aqua;
+   }
 .red{
     color: red;
 }
+@keyframes shake-image {
+    0% { transform: translate(-18px, -14px); }
+    33% { transform: translate(-20px, -14px); }
+    66% { transform: translate(-20px, -16px); }
+    100% { transform: translate(-18px, -16px); }
+  }
+  
+  .hero-image :hover {
+    animation: shake-image .7s infinite ease-in-out ;
+    border-radius: 90%;
+    /* background-color: black; */
+    /* height:250px;
+    width: 250px; */
+    /* border: 10px solid red; */
+  }
