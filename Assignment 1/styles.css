@@ -4,10 +4,18 @@
   box-sizing: border-box;
 }
 
-#container {
+.bgcontainer{
+  position: fixed;
+  z-index: -10;
+  top: 0;
   background-image: url("./images/hero.png");
+
   height: 100vh;
   width: 100vw;
+}
+
+#container {
+  
 }
 
 #container-nav {
@@ -99,6 +107,13 @@
   100% {
     transform: translate(-18px, -16px);
   }
+}
+
+.about{
+  width: 100%;
+  height: 70vh;
+  border: 2px solid black;
+  background-color: black;
 }
 
 /* .hero-image :hover {
