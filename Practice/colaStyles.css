@@ -3,4 +3,26 @@
   margin: 0;
   box-sizing: border-box;
 }
-#Containre
+#Container {
+  background-color: #f1f1f1;
+}
+#header {
+  
+  height: 100px;
+  background-color: antiquewhite;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.items {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#main-body-slideshow {
+ background-color: aqua;
+ height: 80vh;
+ 
+}
