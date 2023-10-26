@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="colaStyles.css" />
+    <script src="./colaScript.js"></script>
   </head>
   <body>
     <div id="Container">
@@ -21,7 +22,56 @@
           <li class="items">IMPACT</li>
         </ul>
       </div>
-      <div id="main-body-slideshow">hello</div>
+      <div id="main-body">
+        <div class="main-body-slideshow">
+          <img
+            id="image"
+            height="100%"
+            src="./cocaColaImages/1440x810-web20v3.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="main-body-slideshow" id="radioDiv">
+          <div id="radioDiv-Content">
+            <input
+              type="radio"
+              name="radio"
+              id="radio1"
+              class="radio-image"
+              onclick="handleRadioClick('./cocaColaImages/1440x810-web20v3.jpeg')"
+            />
+
+            <input
+              type="radio"
+              name="radio"
+              id="radio2"
+              class="radio-image"
+              onclick="handleRadioClick('./cocaColaImages/en_coca-cola_desktop_header04_1440x810.jpg')"
+            />
+
+            <input
+              type="radio"
+              name="radio"
+              id="radio3"
+              class="radio-image"
+              onclick="handleRadioClick('image3.jpg')"
+            />
+
+            <input
+              type="radio"
+              name="radio"
+              id="radio4"
+              class="radio-image"
+              onclick="handleRadioClick('image4.jpg')"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="image-gallery-container"><div id="image-gallery">
+          <img class = "gallery-images" src="./cocaColaImages/width3840.jpg" alt="">
+          <img src="./cocaColaImages/width384010.jpg" alt="" class="gallery-images">
+          <img src="./cocaColaImages/width384012.jpg" alt="" class="gallery-images">
+      </div></div>
     </div>
   </body>
 </html>
