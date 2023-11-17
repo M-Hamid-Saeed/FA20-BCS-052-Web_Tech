@@ -93,6 +93,7 @@
 .main-body {
   margin-top: 20px;
   margin-left: 20px;
+  background-color: #2e3192;
 }
 
 .side-bar {
@@ -105,6 +106,9 @@
 
 .side-bar-list {
   list-style: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: black;
 }
 
 .side-bar-item {

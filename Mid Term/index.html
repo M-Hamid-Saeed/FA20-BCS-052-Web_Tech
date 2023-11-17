@@ -8,6 +8,25 @@
     <title>LUMS</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <script>
+      const loadfunc = () => {
+        const button = document.getElementById("additem");
+        const mylist = document.getElementById("myList");
+        const inputData = document.getElementById("newItem");
+
+        button.addEventListener("click", () => {
+          let newEl = document.createElement("li");
+          let text = document.createTextNode(inputData.value);
+
+            `asdasd ${data.name} adsasdasd ${}`
+          newEl.appendChild(text);
+
+          mylist.appendChild(newEl);
+        });
+        inputData.value=null
+      };
+      window.onload(loadfunc());
+    </script>
   </head>
   <body>
     <div id="bg-container">
@@ -65,5 +84,8 @@
         <li class="side-bar-item"><a class="item-text" href="#">DONORS</a></li>
       </ul>
     </div>
+    <form action="">
+      <div><label>Name</label></div>
+    </form>
   </body>
 </html>
