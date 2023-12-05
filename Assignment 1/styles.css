@@ -69,8 +69,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+
 }
+
 
 .hero-tagline {
   display: flex;
@@ -119,8 +121,9 @@
   width: 70%;
 }
 .carousel-inner {
+  border-radius: 5%;
   background-color: black;
-  height: 370px; /* Adjust the height as needed */
+  height: 350px; /* Adjust the height as needed */
 }
 
 .carousel-caption {
@@ -155,6 +158,12 @@
 .carousel-control-prev-icon:before,
 .carousel-control-next-icon:before {
   color: white;
+}
+.card-img-top:hover{
+  filter:blur(0rem)
+}
+.card-img-top{
+  filter: blur(.1rem);
 }
 
 

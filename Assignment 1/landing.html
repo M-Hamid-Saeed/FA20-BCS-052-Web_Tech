@@ -10,13 +10,20 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+    />
 
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <!-- Bootstrap JS and dependencies (jQuery and Popper.js) links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
     <script src="script.js"></script>
   </head>
@@ -33,7 +40,9 @@
             <li class="item"><a class="item-text" href="#">HOME</a></li>
             <li class="item"><a class="item-text" href="#">CONTACT</a></li>
             <li class="item"><a class="item-text" href="#">NEWS</a></li>
-            <li class="item"><a class="item-text" href="./signInPage.html">SIGN IN</a></li>
+            <li class="item">
+              <a class="item-text" href="./signInPage.html">SIGN IN</a>
+            </li>
           </ul>
         </div>
         <div id="container-nav-search">
@@ -43,7 +52,12 @@
 
       <div class="container-hero">
         <div class="hero-image">
-          <img src="./images/mascot.png" alt="" class="image" />
+          <img
+            
+            src="./images/mascot.png"
+            alt=""
+            class="image"
+          />
         </div>
         <div class="hero-tagline">
           <span class="tagline">GAMER</span>
@@ -59,15 +73,15 @@
     <div class="container-fluid main-section mt-5 text-white">
       <div class="main-main-container">
         <div class="row">
-          <div class = "text-section">
-          <div class="col-md-6">
-            <h2 class="mb-4">Top Tournaments</h2>
-            <p>
-             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sit 
-            </p>
+          <div class="text-section">
+            <div class="col-md-6">
+              <h2 class="mb-4">Top Tournaments</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                sit
+              </p>
+            </div>
           </div>
-          </div>
-
 
           <div class="col-md-8">
             <!-- Bootstrap Carousel for Image Slider -->
@@ -191,5 +205,11 @@
         </div>
       </div>
     </div>
+    <script>
+      const cursor = new MouseFollower({
+        container: document.body,
+        speed: 0.3,
+      });
+    </script>
   </body>
 </html>
