@@ -25,60 +25,10 @@
     <link rel="stylesheet" href="public/css/gamesCss.css" />
   </head>
   <body>
-    <div
-      id="navigation_bar"
-      class="py-4 container-fluid d-flex justify-content-between sticky-top"
-    >
-      <button id="logo-button" type="button" class="btn btn-lg">
-        Gamevia
-      </button>
 
-      <div id="middle-bar" class="row px-1 mt-0">
-        <div class="col">
-          <button
-            onclick="document.location='#first-container'"
-            class="btn btn-lg mt-0"
-          >
-            ABOUT
-          </button>
-        </div>
-        <div class="col">
-          <button
-            onclick="window.location.href = 'services'"
-            class="btn btn-lg mt-0"
-          >
-            SERVICES
-          </button>
-        </div>
-        <div class="col">
-          <button onclick="document.location='#footer'" class="btn btn-lg mt-0">
-            CONTACT
-          </button>
-        </div>
-        <!-- <div class="col">
-                <button id="hang-out" class="btn btn-lg mt-0">HANG OUT</button>
-            </div> -->
-      </div>
-
-      <button
-        id="menu-button"
-        type="button"
-        class="btn btn-lg d-flex justify-content-around dropdown-toggle pt-3"
-        data-bs-toggle="dropdown"
-      >
-        Menu
-        <!-- <div id="menu-img-holder">
-                <img id="menu-image" src="public/public/landingPage-assets/menu-32px.png" alt="">
-            </div> -->
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="/logout-user">Sign Out</a></li>
-        <li><a class="dropdown-item" href="services">Services</a></li>
-      </ul>
-    </div>
 
     <div id="first-container" class="py-4 px-2 d-flex justify-content-between">
-      <h1 class="d-inline">Admin Access</h1>
+      
       <div id="main-action-buttons" class="d-flex mx-5">
         <button
           id="load-button"
@@ -105,10 +55,7 @@
           <th scope="col">#</th>
           <th scope="col">Title</th>
           <th scope="col">Genre</th>
-          <th scope="col">Date</th>
           <th scope="col">Time</th>
-          <th scope="col">Registered Users</th>
-          <th scope="col">Cover Image</th>
 
           <th scope="col">Actions</th>
         </tr>
@@ -119,24 +66,9 @@
           <th scope="row"><%= index + 1 %></th>
           <td><%= games[index].title%></td>
           <td><%= games[index].genre%></td>
-          <td>
-            <%= games[index].date.toLocaleDateString("en-US", { month: "short",
-            day: "numeric", year: "numeric" }) %>
-          </td>
+
           <td><%= games[index].time%></td>
-          <td><%= games[index].registeredUsersCount %></td>
-          <td>
-            <img
-              src="<%= games[index].image %>"
-              alt="Game Image"
-              style="
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                max-width: 300px;
-              "
-            />
-          </td>
+
           <td>
             <button
               id="load-button"
@@ -172,17 +104,7 @@
           </td>
         </tr>
         <% } %>
-
       </tbody>
     </table>
-
-
-
-    <%- include('./footer') %> <% for (let index = 0; index < games.length;
-    index++) { %>
-    <script>
-      console.log("Game Image Path:", "<%= games[index].image %>");
-    </script>
-    <% } %>
   </body>
 </html>

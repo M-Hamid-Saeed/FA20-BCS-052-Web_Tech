@@ -17,9 +17,9 @@
 </head>
 <body>
     <div class="Form-user">
-        <h1 class="m-5">Add A Game</h1>
+        <h1 class="m-5">Update Tournament</h1>
         <div id="form-container" class="mx-5 p-4 shadow rounded">
-            <form method="post" action="/addGame" enctype="multipart/form-data">
+            <form method="post" action="/updateGame/<%= game._id %>" enctype="multipart/form-data">
                 <div class="form-group form-control-lg">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" id="title" placeholder="Enter game title" name="title">
@@ -29,21 +29,13 @@
                     <input type="text" class="form-control" id="genre" placeholder="Genre here" name="genre">
                 </div>
              
-
-                <div class="form-group form-control-lg">
-                    <label for="date">Date</label>
-                    <input type="date" class="form-control" id="date" name="date">
-                </div>
                 <div class="form-group form-control-lg">
                     <label for="time">Time</label>
                     <input type="time" class="form-control" id="time" placeholder="Select time" name="time">
-                    <!-- You may use a third-party time picker library or create a custom solution here -->
+                   
                 </div>
-                <div class="form-group form-control-lg">
-                    <label for="image">Image</label>
-                    <input type="file" class="form-control" id="image" name="image">
-                </div>
-                <button class="btn btn-primary btn-block add-btn mx-3 my-5" type="submit">Add Game</button>
+              
+                <button class="btn btn-primary btn-block add-btn mx-3 my-5" type="submit">Update Game</button>
             </form>
         </div>
     </div>
