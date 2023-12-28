@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamitron</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="serviceLayout.css">
+</head>
+<body>
+    <div id="navigation_bar" class="py-4 container-fluid d-flex justify-content-between sticky-top">
+        <button id="logo-button" type="button" class="btn btn-lg">Gamitron</button>
+
+        <div id="middle-bar" class="row px-1 mt-0">
+            <div class="col">
+                <button onclick="document.location='#first-container'" class="btn btn-lg mt-0">ABOUT</button>
+            </div>
+            <div class="col">
+                <button onclick="document.location='#services-container'" class="btn btn-lg mt-0">SERVICES</button>
+            </div>
+            <div class="col">
+                <button onclick="document.location='#footer'" class="btn btn-lg mt-0">CONTACT</button>
+            </div>
+            <!-- <div class="col">
+                <button id="hang-out" class="btn btn-lg mt-0">HANG OUT</button>
+            </div> -->
+        </div>
+
+        <button id="menu-button" type="button" class="btn btn-lg d-flex justify-content-around ">
+            Menu
+            <div id="menu-img-holder">
+                <img id="menu-image" src="landingPage-assets/menu-32px.png" alt="">
+            </div>
+        </button>
+    </div>
+    <div id="first-container" class="d-flex flex-row pt-5 justify-content-around">
+        <div id="first-container-first-column" class="d-flex flex-column">
+            <p id="intro-text-description" ><strong>Creating the best games for our users since 2023.</strong></p>
+            <button id="created-games" class="btn btn-lg mt-5 bg-light">
+                Games We've Created
+            </button>
+        </div>
+        <div id="first-container-second-column" class="container">
+            <img src="landingPage-assets/gamer.png" alt="" id="gamer-image">
+        </div>
+    </div>
+
+    <div id="our-clients" class="container d-flex flex-column text-center">
+        <h1>Our Clients</h1>
+        <div id="client-list" class="d-flex flex-row justify-content-around mt-4">
+            <img id="ep-icon" src="landingPage-assets/ep.svg" alt="">
+            <img id="ea-icon" src="landingPage-assets/ea-64.png" alt="">
+            <img id="roblox-icon" src="landingPage-assets/roblox-64.png" alt="">
+            <img src="landingPage-assets/ubisoft.png" alt="" id="ubisoft-icon">
+        </div>
+    </div>
+
+    <div id="services-container" class="container-fluid d-flex flex-column">
+        <div id="services-title" class="container text-center pt-5">
+            <h2 style="color: white">Services</h2>
+            <div id="line" class="container bg-black pt-2 text-center">
+        </div>
+        <div id="service-list-row" class="container d-flex flex-row pt5 mt5">
+            <div id="scripting" class="container d-flex flex-column m-5 p-5 text-center">
+                <h2>Scirpting</h2>
+                <img src="landingPage-assets/c-sharp.png" alt="">
+                <div class="service-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique animi vitae beatae.
+                </div>
+            </div>
+            <div id="game-art" class="container d-flex flex-column m-5 p-5 text-center">
+                <h2>Game Art</h2>
+                <img src="landingPage-assets/palette.png" alt="" class="text-center">
+                <div class="service-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique animi vitae beatae.
+                </div>
+            </div>
+            <div id="game-design" class="container d-flex flex-column m-5 p-5 text-center">
+                <h2>Game Design</h2>
+                <img src="landingPage-assets/puzzle.png" alt="">
+                <div class="service-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique animi vitae beatae.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer-container" class="container-fluid bg-black">
+        <div id="footer" class="d-flex flex-row mx-5 p-5 justify-content-between">
+            <div id="first-footer-column" class="d-flex flex-column">
+                <h2 id="company-footer-text">GAMITRON</h2>
+                <p id="footer-closing-description">Take your skills to the next level in an ideal and fun environment.</p>
+                <div id="footer-icons" class="d-flex flex-row justify-content-between">
+                    <img src="landingPage-assets/steam.png" alt="">
+                    <img src="landingPage-assets/game-controller.png" alt="">
+                    <img src="landingPage-assets/google-play.png" alt="">
+                </div>
+
+            </div>
+            <div id="second-footer-column" class="d-flex flex-column">
+                <a href= 'landingPage.html' ><strong>HOME</strong></a>
+                <a href="http://"><strong>NFT</strong></a>
+                <a href="http://"><strong>SERVICES</strong></a>
+                <a href="http://"><strong>HEHE</strong></a>
+                <div id="technical-fields" class="d-flex flex-row justify-content-around">
+                    <p>Community</p>
+                    <p>Privacy</p>
+                    <p>Terms
+                    </p>
+                </div>
+            </div>
+            <div id="third-footer-column" class="d-flex flex-column text-center">
+                <img id="qr-code" src="landingPage-assets/qr-code.png" alt="">
+                <div id="footer-social-icons" class="d-flex flex-row justify-content-between">
+                    <img src="landingPage-assets/instagram.png" alt="">
+                    <img src="landingPage-assets/facebook.png" alt="">
+                    <img src="landingPage-assets/twitter-sign.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <strong>Creator : </strong>  Muhammad Ahmad Shahid Qureshi
+    </footer>
+</body>
+</html>
